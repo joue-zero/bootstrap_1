@@ -27,7 +27,6 @@ html {
 .upper-nav .quote {
   padding: 2px 13px;
   border: 1px solid var(--color-red);
-  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .upper-nav .text-right {
@@ -37,8 +36,6 @@ html {
 /* End Upper NavBar  */
 
 /* Start navBar */
-.navbar {
-}
 .navbar h2 {
   color: var(--color-blue);
 }
@@ -48,7 +45,6 @@ html {
 }
 .navbar-light .navbar-nav .nav-link {
   color: var(--color-blue);
-  text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
@@ -92,10 +88,6 @@ html {
 /* End Landing Page */
 
 /* Start Features */
-.features {
-  padding-top: var(--padding);
-  padding-bottom: var(--padding);
-}
 .features i {
   color: #fff;
   background-color: var(--color-red);
@@ -116,3 +108,27 @@ html {
   max-width: 90%;
 }
 /* End Features */
+
+/* Start Overview */
+.overview {
+  background-color: #f0f5f7
+}
+@media (max-width: 575.98px) {
+  .overview h2 {
+    font-size: 25px
+  }
+  .overview p {
+    font-size: 16px;
+    line-height: 1.7
+  }
+}
+.overview span {
+  letter-spacing: 2px;
+  color: #a3a7a9;
+}
+.overview a {
+  color: #fff;
+  background-color: var(--color-red);
+  border-radius: 0;
+}
+/* End Overview */
