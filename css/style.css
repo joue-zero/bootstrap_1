@@ -1,0 +1,118 @@
+/* Start Global */
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-blue: #08526d;
+  --color-red: #ec1c23;
+  --padding: 50px;
+}
+/* End Global */
+/* Start Upper NavBar  */
+.upper-nav {
+  background-color: var(--color-blue);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.upper-nav span {
+  color: #a7a7a7;
+}
+.upper-nav span.two {
+  color: #fff;
+}
+.upper-nav i {
+  color: #fff;
+  margin: 0 5px;
+}
+.upper-nav .quote {
+  padding: 2px 13px;
+  border: 1px solid var(--color-red);
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .upper-nav .text-right {
+    text-align: left !important;
+  }
+}
+/* End Upper NavBar  */
+
+/* Start navBar */
+.navbar {
+}
+.navbar h2 {
+  color: var(--color-blue);
+}
+.navbar h2 span {
+  font-weight: normal;
+  color: var(--color-red);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-blue);
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--color-red);
+}
+/* End navBar */
+
+/* Start Landing Page */
+.landing {
+  background-color: var(--color-blue);
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.landing .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.landing .container {
+  position: relative;
+  z-index: 2;
+}
+.landing .text-intro h2 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .landing .text-intro h2 {
+    font-size: 30px;
+  }
+}
+.landing .text-intro h2 span {
+  background-color: var(--color-red);
+  padding: 3px 5px;
+}
+/* End Landing Page */
+
+/* Start Features */
+.features {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.features i {
+  color: #fff;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+.features h3 {
+  color: var(--color-blue);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.features p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #a3a7a9;
+  max-width: 90%;
+}
+/* End Features */
