@@ -8,6 +8,19 @@ html {
   --padding: 50px;
 }
 /* End Global */
+
+/* Start Component */
+@media (max-width: 575.98px) {
+  .h2-xs {
+    font-size: 25px;
+  }
+  .p-xs {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+/* End Component */
+
 /* Start Upper NavBar  */
 .upper-nav {
   background-color: var(--color-blue);
@@ -111,16 +124,7 @@ html {
 
 /* Start Overview */
 .overview {
-  background-color: #f0f5f7
-}
-@media (max-width: 575.98px) {
-  .overview h2 {
-    font-size: 25px
-  }
-  .overview p {
-    font-size: 16px;
-    line-height: 1.7
-  }
+  background-color: #f0f5f7;
 }
 .overview span {
   letter-spacing: 2px;
@@ -132,3 +136,49 @@ html {
   border-radius: 0;
 }
 /* End Overview */
+
+/* Start Our Galary */
+.galary {
+}
+.galary-image img {
+  width: 100%;
+  height: 100%;
+}
+.galary-image .col-md-3,
+.galary-image .col-sm-6, 
+.galary-image .col-12 {
+  padding: 0
+}
+.galary .img-box {
+  position: relative;
+  transition: .5s
+}
+.galary .img-box button.pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s
+}
+.galary .img-box > i {
+  color: #FFF;
+  cursor: pointer;
+  display: none;
+  transition: .5s;
+}
+.galary .img-box:hover button.pop {
+  opacity: 1;
+}
+.galary .img-box:hover > i {
+  display: block;
+}
+.galary .img-box:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #215b7077;
+  opacity: 1;
+}
+/* End Our Galary */
